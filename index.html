@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    h1{ color: cornflowerblue;}
+    body{
+        background-image: url(back.webp);
+        
+        
+        
+    }
+    button{
+        border: 2px solid blue;
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        color:rgb(17, 81, 200);
+        font-size: 25px;
+        background: scroll;
+    }
+    input{
+        background: scroll;
+        color: rgb(17, 81, 200);
+        border-color: rgb(226, 0, 60);
+        text-align: center;
+        
+    }
+</style>s
+<body>
+    <center>
+        <h1>Daynamic Multiplecation</h1>
+        
+        
+        <label for="">start</label>
+
+        <input type="number" name="enumber" id="start">
+    
+      <label for="">and</label> 
+    
+       <input type="number" name="enumber" id="and">
+    
+       <label for="">enter T num</label>
+    
+        <input type="number" name="enumber" id="enter">
+    
+        <button onclick="threet()">table2</button>
+        <h1 id="five"></h1>
+    
+        <div>
+            <img src="l6.gif" id="pic">
+            
+        </div>
+        <div>
+            
+            <button onclick="document.getElementById('pic').src='l6.gif'">off</button>
+            <button onclick="document.getElementById('pic').src='l7.gif'">on</button>
+        </div>
+    </center>
+    
+    
+    
+    
+    <script>
+        let fams = document.getElementById('five')
+        
+ function threet() {
+    fams.innerHTML= ''
+  const number4= parseInt( document.getElementById('start').value)
+
+  const number5= parseInt ( document.getElementById('and').value)
+  const number6= parseInt ( document.getElementById('enter').value)
+  
+ 
+    for ( let index=number4; index<=number5; index++){
+  fams.innerHTML+= number6+ " x " + index+ " = " + index*number6+"</br>"
+    }
+}
+    </script>
+    
+</body>
+</html>
